@@ -1,6 +1,7 @@
 .ribbon {
  font-size: 32px !important;
  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+ box-shadow: 0px 10px 20px rgba(0,0,0,.1);
 
  //width: 50%;
  width: 70%;
@@ -26,11 +27,13 @@
  left: -2em;
  border-right-width: 1.5em;
  border-left-color: transparent;
+ box-shadow: 10px 10px 10px rgba(0,0,0,.05);
 }
 &::after {
  right: -2em;
  border-left-width: 1.5em;
  border-right-color: transparent;
+ box-shadow: -10px 10px 10px rgba(0,0,0,.05);
 }
 }
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
