@@ -3,7 +3,9 @@
     -#= stylesheet_link_tag "//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Pacifico:400", :media => "all"
     = stylesheet_link_tag "//fonts.googleapis.com/css?family=Amatic+SC:400|Shadows+Into+Light:400|Pacifico:400", :media => "all"
     = stylesheet_link_tag "application", media: 'all', "data-turbolinks-track" => true
-    %title THE SWAGNIFICENT SEVEN
+    %title The Gentle Compliment Generator
+    %meta{name:"Description",content:"Automated Life Coaching, powered by Rails. Also my first Ruby app."}
+    %meta{name:"gen@",content:"#{Time.now}"}
 
   %body.scaled
 
@@ -40,6 +42,25 @@
         today is
         #{Time.now.in_time_zone('Eastern Time (US & Canada)').strftime("%A").downcase}
         and idgaf
-      .timestamp
+      -#.timestamp
         = Time.now
+      .timestamp
+        %a.key{href:"#"}
+          credits
+        .credits
+          .signature{style:"float:none;"}
+            The Gentle Compliment Generator
+          %p
+            by 
+            %a{href:"http://github.com/fists"} fists
+          %ul
+            %li
+              css background
+            %li
+              css banner
+            %li
+              bon-bon button
+            %li
+              google fonts:
+              %li Pacifico, something, something
 -#= yield

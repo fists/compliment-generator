@@ -4,6 +4,7 @@ Here the Hamsters Roam Fre
 
 @import 'ribbon.css';
 @import 'buttons.css';
+//@import 'boom.css';
 
 body {
   // *****************
@@ -105,7 +106,7 @@ body {
     //height: 100%;
     //top: 50%;
     //top: 10vh;
-    top:3rem;
+    top:3.6rem;
     //top: 7rem;
     position: relative;
     //transform: translateY(-50%);
@@ -162,10 +163,58 @@ body {
     .timestamp {
       float: right;
       font-size: .5rem;
-      margin-right: 4rem;
-      &::before{
-        content:"gen@ ";
+      //font-size: 1rem;
+      margin-right: 2rem;
+      //&::before{
+      //  content:"gen@ ";
+      //}
+
+      a.key {
+        padding:2.2rem 2rem 2rem 2rem;
+        text-decoration: none;
+
+        &:hover,&:active{
+          background: silver;
+          color: white;
+        }
       }
+    }
+
+    .credits {
+      display: none;
+      position: absolute;
+      bottom: 5.1rem;
+      right: 4.03rem;
+      background: rgba(255,255,255,.75);
+      width: 15rem;
+      height: 10rem;
+      padding: 1rem;
+      z-index: 3;
+      color: palevioletred;
+      font-size: 1rem;
+      text-align: center;
+
+      &:hover{
+        display: block;
+      }
+
+      a {
+        padding: none;
+      }
+
+      ul{
+        margin-top: .5rem;
+        font-size: .75rem;
+        li{
+          text-align: left;
+          list-style: none;
+          margin-left: -2.2rem;
+        }
+      }
+    }
+
+    a:hover + .credits,a:active+.credits {
+      display: block;
     }
   }
 }
