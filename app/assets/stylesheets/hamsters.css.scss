@@ -3,7 +3,7 @@ Here the Hamsters Roam Fre
 */
 
 @import 'ribbon.css';
-@import 'butan.css';
+@import 'buttons.css';
 
 body {
   // *****************
@@ -27,9 +27,16 @@ body {
     background-size:100px 50px;
   }
 
+  .wrapper{
+    width:100%;
+    overflow: hidden;
+    height: 11.5rem;
+  }
+
   #title {
     position: relative;
     top: 1.6rem;
+    width:110%;
 
     &::after {
       content: " ";
@@ -44,6 +51,10 @@ body {
       background-size:30px 30px, 30px 30px;
     }
 
+    &:hover::after{
+     -webkit-animation: scrollbottom .1s linear infinite;
+    }
+
     &::before{
       top:-30px;
       content: " ";
@@ -55,6 +66,11 @@ body {
                   linear-gradient( 135deg, transparent 75%, pink 75%) 0 50%;
       background-repeat: repeat-x;
       background-size:30px 30px, 30px 30px;
+      //could be fun to animate the width percentage on load
+    }
+
+    &:hover::before{
+      -webkit-animation: scrolltop .1s linear infinite;
     }
 
     text-align: center;
@@ -75,7 +91,7 @@ body {
   }
 
   #main{
-    position: relative; z-index: 10;
+    position: relative; z-index: 1;
 //    background: white;
 //    border-radius: 50%;
 
@@ -124,7 +140,7 @@ body {
   }
 
   #footer {
-    z-index: 20;
+    z-index: 2;
     padding: 2rem;
     background: rgba(255,255,255,.8);
     color: silver;
@@ -148,4 +164,14 @@ body {
       }
     }
   }
+}
+
+@-webkit-keyframes scrolltop { /* Chrome, Safari, Opera */
+  0%   {left:-30px;}
+  100% {left:0px;}
+}
+
+@-webkit-keyframes scrollbottom { /* Chrome, Safari, Opera */
+  0%   {left:0px;}
+  100% {left:-30px;}
 }
