@@ -21,3 +21,7 @@ module RubyGettingStarted
     # config.i18n.default_locale = :de
   end
 end
+
+class Application < Rails::Application
+  config.time_zone = 'Eastern Time (US & Canada)'
+end
