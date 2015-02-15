@@ -30,13 +30,16 @@ body {
   .wrapper{
     width:100%;
     overflow: hidden;
-    height: 11.5rem;
+    //height: 11.5rem;
+    height: auto;
+    padding-bottom: .7rem;
   }
 
   #title {
     position: relative;
     top: 1.6rem;
     width:110%;
+    left: -5%;
 
     &::after {
       content: " ";
@@ -101,7 +104,8 @@ body {
     
     //height: 100%;
     //top: 50%;
-    top: 10vh;
+    //top: 10vh;
+    top:3rem;
     //top: 7rem;
     position: relative;
     //transform: translateY(-50%);
