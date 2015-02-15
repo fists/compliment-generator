@@ -1,11 +1,15 @@
 /*
-
-Here the Hamsters Roam Free
-
+Here the Hamsters Roam Fre
 */
 
 body {
-  background: yellow;
+  // ************
+  // reset shit
+  // ***********
+  margin: 0;
+  padding: 0;
+
+  // on with the show
   font-family: 'Open Sans', sans-serif;
 
   &.scaled {
@@ -41,7 +45,37 @@ body {
       1px -1px 0 #000,
       -1px 1px 0 #000,
        1px 1px 0 #000;
+  }
 
+  #main{
+    text-align: center;
+    margin: 10rem;
+  }
 
+  #footer {
+    padding: 2rem;
+    //margin: -1rem;
+    background: rgba(255,255,255,.8);
+    color: silver;
+
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: block;
+
+    .signature {
+      color: gray;
+      font-family: 'Pacifico', serif;
+      float: left;
+    }
+
+    .timestamp {
+      float: right;
+      font-size: .5rem;
+      margin-right: 4rem;
+      &::before{
+        content:"gen@ ";
+      }
+    }
   }
 }
