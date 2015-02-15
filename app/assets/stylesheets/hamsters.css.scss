@@ -1,9 +1,47 @@
 /*
 
-Hamsters
+Here the Hamsters Roam Free
 
 */
 
 body {
   background: yellow;
+  font-family: 'Open Sans', sans-serif;
+
+  &.scaled {
+    background-color:whitesmoke;
+    background-image:
+    radial-gradient(circle at 100% 150%, whitesmoke 24%, white 25%, white 28%, whitesmoke 29%, whitesmoke 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 0    150%, whitesmoke 24%, white 25%, white 28%, whitesmoke 29%, whitesmoke 36%, white 36%, white 40%, transparent 40%, transparent),
+    radial-gradient(circle at 50%  100%, white 10%, whitesmoke 11%, whitesmoke 23%, white 24%, white 30%, whitesmoke 31%, whitesmoke 43%, white 44%, white 50%, whitesmoke 51%, whitesmoke 63%, white 64%, white 71%, transparent 71%, transparent),
+    radial-gradient(circle at 100% 50%, white 5%, whitesmoke 6%, whitesmoke 15%, white 16%, white 20%, whitesmoke 21%, whitesmoke 30%, white 31%, white 35%, whitesmoke 36%, whitesmoke 45%, white 46%, white 49%, transparent 50%, transparent),
+    radial-gradient(circle at 0    50%, white 5%, whitesmoke 6%, whitesmoke 15%, white 16%, white 20%, whitesmoke 21%, whitesmoke 30%, white 31%, white 35%, whitesmoke 36%, whitesmoke 45%, white 46%, white 49%, transparent 50%, transparent);
+    background-size:100px 50px;
+  }
+
+  #title {
+    border-top: 3px dotted #e5e5e5;
+    border-bottom: 3px dotted #e5e5e5;
+  //  border: 6px dotted #e5e5e5;
+    box-shadow: inset 0 -1px 0 0 #e5e5e5, inset 0 1px 0 0 #e5e5e5, 0 1px 0 0 #e5e5e5, 0 -1px 0 0 #e5e5e5;
+    margin-bottom: 1px;
+
+    text-align: center;
+    color: pink;
+    margin: 1rem 2rem;
+    background: rgba(255,255,255,0.6);
+    padding: 3rem;
+    font-size: 2.5rem;
+    font-family: 'Pacifico', serif;
+
+   -webkit-text-stroke: 1px black;
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+
+
+  }
 }

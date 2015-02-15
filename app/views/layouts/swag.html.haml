@@ -1,7 +1,15 @@
 %html
   %head
-    = stylesheet_link_tag 'application'
-  %title THE SWAGNIFICENT SEVEN
-  yolo
+    = stylesheet_link_tag "//fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700|Pacifico:400", :media => "all"
+    -#= stylesheet_link_tag "hamsters"
+    = stylesheet_link_tag "application", media: 'all', "data-turbolinks-track" => true
+    %title THE SWAGNIFICENT SEVEN
+
+  %body.scaled
+
+    #title
+      The Gentle Compliment Generator
+
+    yolo
 
 -#= yield
