@@ -16,7 +16,9 @@
       .signature
         -#today is #{Time.now.strftime("%A").downcase} and idgaf
         -#today is #{Time.zone.now.strftime("%A").downcase} and idgaf
-        today is #{Date.today.strftime("%A").downcase} and idgaf
+        today is
+        #{Time.now.in_time_zone('Eastern Time (US & Canada)').strftime("%A").downcase}
+        and idgaf
       .timestamp
         = Time.now
 
