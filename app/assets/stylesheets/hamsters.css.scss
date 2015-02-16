@@ -170,8 +170,11 @@ body {
       //}
 
       a.key {
-        padding:2.2rem 2rem 2rem 2rem;
+        padding:1.8rem 2rem 2rem 2rem;
         text-decoration: none;
+        font-family: 'Pacifico';
+        font-size: 13px;
+        color: silver;
 
         &:hover,&:active{
           background: silver;
@@ -187,12 +190,17 @@ body {
       right: 4.03rem;
       background: rgba(255,255,255,.75);
       width: 17rem;
-      height: 15rem;
+      height: 17rem;
       padding: 1rem;
       z-index: 3;
       color: palevioletred;
       font-size: 1rem;
       text-align: center;
+
+      p {
+        margin: 1rem 0 0rem 0;
+        font-size: .75rem;
+      }
 
       &:hover{
         display: block;
