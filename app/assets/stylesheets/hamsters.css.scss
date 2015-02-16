@@ -190,8 +190,8 @@ body {
       right: 4.03rem;
       background: rgba(255,255,255,.75);
       width: 17rem;
-      height: 17rem;
-      padding: 1rem;
+      height: 16rem;
+      padding: 2rem 1rem;
       z-index: 3;
       color: palevioletred;
       font-size: 1rem;
@@ -210,15 +210,52 @@ body {
         padding: none;
       }
 
-      ul{
-        margin-top: .5rem;
-        font-size: .75rem;
-        li{
-          text-align: left;
+      ul {
+          max-width: 40em;
+          padding: 0;
+          overflow-x: hidden;
           list-style: none;
-          margin-left: -2.2rem;
+          text-align: left;
+        }
+      ul li:before {
+          float: left;
+          width: 0;
+          white-space: nowrap;
+          content:
+       ". . . . . . . . . . . . . . . . . . . . "
+       ". . . . . . . . . . . . . . . . . . . . "
+       ". . . . . . . . . . . . . . . . . . . . "
+       ". . . . . . . . . . . . . . . . . . . . "}
+      ul span:first-child {
+          padding-right: 0.33em;
+          background: white}
+      ul span + span {
+          float: right;
+          padding-left: 0.33em;
+          background: white}
+      ul li span.work a {
+        color: palevioletred;
+        &:hover{
+          color: white;
+          background: palevioletred;
         }
       }
+
+      //ul{
+      //  margin-top: .5rem;
+      //  font-size: .75rem;
+      //  li {
+      //    text-align: left;
+      //    list-style: none;
+      //    margin-left: -2.2rem;
+      //    display: block;
+//
+      //    .dotty {
+      //      float: right;
+      //      text-align: right;
+      //    }
+      //  }
+      //}
     }
 
     a:hover + .credits,a:active+.credits {
