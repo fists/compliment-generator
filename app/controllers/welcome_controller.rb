@@ -9,10 +9,15 @@ class WelcomeController < ApplicationController
   #end
 
   def index
-    @words = Word.order("random()").limit(3)
-    @first_word = Word.adverb.order("random()")
-    @second_word = Word.adjective.order("random()")
-    @third_word = Word.noun.where.order("random()")
+    @first_word, @second_word, @third_word = {}
+    good = true
+    while good
+      @words = Word.order("random()").limit(3)
+      @first_word = Word.adverb.order("random()").first
+      @second_word = Word.adjective.order("random()").first
+      @third_word = Word.noun.order("random()").first
+      good = [@first_word.is_positive, @second_word.is_positive, @third_word.is_positive].all?
+    end
   end
 
  # first must be adjective
