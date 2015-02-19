@@ -22,3 +22,15 @@ Word.create(word:"pillock"    ,is_positive:0, component:3)
 Word.create(word:"dense"      ,is_positive:0, component:1)
 Word.create(word:"lovely"     ,is_positive:1, component:2)
 Word.create(word:"freak"      ,is_positive:0, component:3)
+
+Word.create(word:"freaky"     ,is_positive:0, component:1)
+Word.create(word:"but sane"   ,is_positive:1, component:2)
+Word.create(word:"inspiration",is_positive:1, component:3)
+
+Word.create(word:"handsy"     ,is_positive:0, component:1)
+Word.create(word:"helpful"    ,is_positive:1, component:2)
+Word.create(word:"hero"       ,is_positive:1, component:3)
+
+Word.create(word:"funny"      ,is_positive:1, component:1)
+Word.create(word:"solution"   ,is_positive:1, component:2)
+Word.create(word:"maker"      ,is_positive:0, component:3)

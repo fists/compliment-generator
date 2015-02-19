@@ -6,4 +6,8 @@ class Word < ActiveRecord::Base
   scope :adjective, -> {where(component: 2)}        # 2: adjective or noun,
   scope :noun, -> {where(component: 3)}             # 3: noun;
                                                     # but effectively this is how we're using them.
+
+  def to_s
+    word + " " + is_positive.to_s
+  end
 end
