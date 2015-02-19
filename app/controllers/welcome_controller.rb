@@ -10,13 +10,14 @@ class WelcomeController < ApplicationController
 
   def index
     @first_word, @second_word, @third_word = {}
-    good = true
+    good = false
     while good
+      puts "rolling the dice...\n"
       @words = Word.order("random()").limit(3)
       @first_word = Word.adverb.order("random()").first
       @second_word = Word.adjective.order("random()").first
       @third_word = Word.noun.order("random()").first
-      good = [@first_word.is_positive, @second_word.is_positive, @third_word.is_positive].all?
+      good = [@first_word.is_positive, @second_word.is_positive, @third_word.is_positive].any?
     end
   end
 
