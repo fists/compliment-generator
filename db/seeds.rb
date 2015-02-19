@@ -17,7 +17,7 @@ Word.create(word:"hack"       ,is_positive:0, component:3)
 
 Word.create(word:"gigantic"   ,is_positive:0, component:1)
 Word.create(word:"purple"     ,is_positive:0, component:2)
-Word.create(word:"pillock"    ,is_positive:0, component:3)
+Word.create(word:"nerd"       ,is_positive:0, component:3)
 
 Word.create(word:"dense"      ,is_positive:0, component:1)
 Word.create(word:"lovely"     ,is_positive:1, component:2)
@@ -33,4 +33,12 @@ Word.create(word:"hero"       ,is_positive:1, component:3)
 
 Word.create(word:"funny"      ,is_positive:1, component:1)
 Word.create(word:"solution"   ,is_positive:1, component:2)
-Word.create(word:"maker"      ,is_positive:0, component:3)
+Word.create(word:"problem-solver"     ,is_positive:1, component:3)
+
+Word.create(word:"brilliant"  ,is_positive:1, component:1)
+Word.create(word:"ass"        ,is_positive:0, component:2)
+Word.create(word:"goose"      ,is_positive:0, component:3)
+
+Word.create(word:"sideways"   ,is_positive:0, component:1)
+Word.create(word:"meat"       ,is_positive:0, component:2)
+Word.create(word:"tornado"    ,is_positive:0, component:3)
