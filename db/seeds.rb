@@ -42,3 +42,31 @@ Word.create(word:"goose"      ,is_positive:0, component:3)
 Word.create(word:"sideways"   ,is_positive:0, component:1)
 Word.create(word:"meat"       ,is_positive:0, component:2)
 Word.create(word:"tornado"    ,is_positive:0, component:3)
+
+Word.create(word:"magical"   ,is_positive:1, component:1)
+Word.create(word:"mysterious",is_positive:0, component:2)
+Word.create(word:"stranger"  ,is_positive:0, component:3)
+
+Word.create(word:"friendly"   ,is_positive:1, component:1)
+Word.create(word:"pink"       ,is_positive:0, component:2)
+Word.create(word:"patriot"    ,is_positive:1, component:3)
+
+Word.create(word:"marvelous"  ,is_positive:1, component:1)
+Word.create(word:"open-minded",is_positive:1, component:2)
+Word.create(word:"delight"    ,is_positive:1, component:3)
+
+Word.create(word:"amazing"    ,is_positive:1, component:1)
+Word.create(word:"busted"     ,is_positive:0, component:2)
+Word.create(word:"clown"      ,is_positive:0, component:3)
+
+Word.create(word:"dorky"      ,is_positive:0, component:1)
+Word.create(word:"goofy"      ,is_positive:0, component:2)
+Word.create(word:"dweeb"      ,is_positive:0, component:3)
+
+Word.create(word:"swift"      ,is_positive:1, component:1)
+Word.create(word:"stumbly"    ,is_positive:0, component:2)
+Word.create(word:"bum"        ,is_positive:0, component:3)
+
+Word.create(word:"fancy"      ,is_positive:1, component:1)
+Word.create(word:"fucking"    ,is_positive:0, component:2)
+Word.create(word:"donkey"     ,is_positive:0, component:3)
