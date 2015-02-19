@@ -11,30 +11,22 @@ class WelcomeController < ApplicationController
   def index
     @first_word, @second_word, @third_word = {}
     good = false
-    #while !good
+    while !good
       puts "rolling the dice...\n"
-      #@words = Word.order("random()").limit(3)
 
-      #@first_word = Word.adverb.order("random()").first
-      #@second_word = Word.adjective.order("random()").first
-      #@third_word = Word.noun.order("random()").first
-
-      #@first_word = Word.adverb.limit(1).order("random()").all
-      #@second_word = Word.adjective.order("random()").limit(1)
-      #@third_word = Word.noun.order("random()").limit(1)
-
-      @first_word = Word.adverb.order("random()").first
-      @second_word = Word.adjective.order("random()").first
-      @third_word = Word.noun.order("random()").first
-
+      Word.uncached do
+        @first_word  = Word.adverb.order("random()").first
+        @second_word = Word.adjective.order("random()").first
+        @third_word  = Word.noun.order("random()").first
+      end
       puts @first_word
       puts @second_word
       puts @third_word
       good = [@first_word.is_positive?, @second_word.is_positive?, @third_word.is_positive?].any?
-    #end
+    end
 
-    @preamble = "don't let anyone dull your sparkle,"
-    @butan = "say something nice"
+    @preamble = "never change,"
+    @butan = "it's goddamn #{Time.now.in_time_zone('Eastern Time (US & Canada)').strftime("%A").downcase}"
 
   end
 
