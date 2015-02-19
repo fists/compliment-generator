@@ -70,3 +70,83 @@ Word.create(word:"bum"        ,is_positive:0, component:3)
 Word.create(word:"fancy"      ,is_positive:1, component:1)
 Word.create(word:"fucking"    ,is_positive:0, component:2)
 Word.create(word:"donkey"     ,is_positive:0, component:3)
+
+Word.create(word:"rich"       ,is_positive:0, component:1)
+Word.create(word:"old"        ,is_positive:0, component:2)
+Word.create(word:"scamp"      ,is_positive:0, component:3)
+
+Word.create(word:"youthful"   ,is_positive:1, component:1)
+Word.create(word:"rockin'"    ,is_positive:1, component:2)
+Word.create(word:"hipster"    ,is_positive:0, component:3)
+
+Word.create(word:"dusty"      ,is_positive:0, component:1)
+Word.create(word:"heavy"      ,is_positive:0, component:2)
+Word.create(word:"lard"       ,is_positive:0, component:3)
+
+Word.create(word:"goddamn"    ,is_positive:0, component:1)
+Word.create(word:"chicken"    ,is_positive:0, component:2)
+Word.create(word:"explosion"  ,is_positive:0, component:3)
+
+Word.create(word:"clever"     ,is_positive:1, component:1)
+Word.create(word:"bus station",is_positive:0, component:2)
+Word.create(word:"toad"       ,is_positive:0, component:3)
+
+Word.create(word:"electric"   ,is_positive:0, component:1)
+Word.create(word:"robot"      ,is_positive:0, component:2)
+Word.create(word:"bin"        ,is_positive:0, component:3)
+
+Word.create(word:"scary"      ,is_positive:0, component:1)
+Word.create(word:"nightmare"  ,is_positive:0, component:2)
+Word.create(word:"fuel"       ,is_positive:0, component:3)
+
+Word.create(word:"tasty"      ,is_positive:1, component:1)
+Word.create(word:"little"     ,is_positive:0, component:2)
+Word.create(word:"object"     ,is_positive:0, component:3)
+
+Word.create(word:"adorable"   ,is_positive:1, component:1)
+Word.create(word:"green"      ,is_positive:0, component:2)
+Word.create(word:"lunchbox"   ,is_positive:0, component:3)
+
+Word.create(word:"hungry"     ,is_positive:0, component:1)
+Word.create(word:"shallow"    ,is_positive:0, component:2)
+Word.create(word:"snack"      ,is_positive:0, component:3)
+
+Word.create(word:"minty"      ,is_positive:1, component:1)
+Word.create(word:"fresh"      ,is_positive:1, component:2)
+Word.create(word:"vegetable"  ,is_positive:0, component:3)
+
+Word.create(word:"fragrant"   ,is_positive:0, component:1)
+Word.create(word:"snack"      ,is_positive:0, component:2)
+Word.create(word:"machine"    ,is_positive:0, component:3)
+
+Word.create(word:"colorful"   ,is_positive:1, component:1)
+Word.create(word:"knitted"    ,is_positive:0, component:2)
+Word.create(word:"sock"       ,is_positive:0, component:3)
+
+Word.create(word:"cool"       ,is_positive:1, component:1)
+Word.create(word:"pinball"    ,is_positive:0, component:2)
+Word.create(word:"wizard"     ,is_positive:1, component:3)
+
+Word.create(word:"dodgy"      ,is_positive:0, component:1)
+Word.create(word:"rust"       ,is_positive:0, component:2)
+Word.create(word:"bucket"     ,is_positive:0, component:3)
+
+Word.create(word:"fake"       ,is_positive:0, component:1)
+Word.create(word:"party"      ,is_positive:0, component:2)
+Word.create(word:"balloon"    ,is_positive:0, component:3)
+
+Word.create(word:"inflatable" ,is_positive:0, component:1)
+Word.create(word:"blow-up"    ,is_positive:0, component:2)
+Word.create(word:"doll"       ,is_positive:0, component:3)
+
+Word.create(word:"sly"        ,is_positive:0, component:1)
+Word.create(word:"musty"      ,is_positive:0, component:2)
+Word.create(word:"codger"     ,is_positive:0, component:3)
+
+Word.create(word:"salty"      ,is_positive:0, component:1)
+Word.create(word:"supportive" ,is_positive:0, component:2)
+Word.create(word:"saint"      ,is_positive:1, component:3)
+
+Word.create(word:"crunchy"    ,is_positive:0, component:1)
+Word.create(word:"grape"      ,is_positive:0, component:2)
+Word.create(word:"drink"      ,is_positive:0, component:3)
