@@ -32,6 +32,10 @@ class WelcomeController < ApplicationController
       puts @third_word
       good = [@first_word.is_positive?, @second_word.is_positive?, @third_word.is_positive?].any?
     #end
+
+    @preamble = "don't let anyone dull your sparkle,"
+    @butan = "say something nice"
+
   end
 
  # first must be adjective
