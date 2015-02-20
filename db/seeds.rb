@@ -68,7 +68,8 @@ Word.create(word:"goofy"      ,is_positive:0, component:2)
 Word.create(word:"dweeb"      ,is_positive:0, component:3)
 
 Word.create(word:"swift"      ,is_positive:1, component:1)
-Word.create(word:"stumbly"    ,is_positive:0, component:2)
+#Word.create(word:"stumbly"    ,is_positive:0, component:2)
+Word.create(word:"stumbling"    ,is_positive:0, component:2)
 Word.create(word:"bum"        ,is_positive:0, component:3)
 
 Word.create(word:"fancy"      ,is_positive:1, component:1)
@@ -156,8 +157,10 @@ Word.create(word:"musty"      ,is_positive:0, component:2)
 Word.create(word:"troll"     ,is_positive:0, component:3)
 
 Word.create(word:"salty"      ,is_positive:0, component:1)
-Word.create(word:"supportive" ,is_positive:0, component:2)
-Word.create(word:"saint"      ,is_positive:1, component:3)
+#Word.create(word:"supportive" ,is_positive:0, component:2)
+Word.create(word:"positive" ,is_positive:1, component:2)
+#Word.create(word:"saint"      ,is_positive:1, component:3)
+Word.create(word:"child"      ,is_positive:0, component:3)
 
 Word.create(word:"crunchy"    ,is_positive:0, component:1)
 Word.create(word:"grape"      ,is_positive:0, component:2)
@@ -182,7 +185,8 @@ Word.create(word:"stupid"      ,is_positive:0, component:1) # kek
 Word.create(word:"doo-doo head"      ,is_positive:0, component:3)
 
 Word.create(word:"glowing"    ,is_positive:0, component:1)
-Word.create(word:"blinky"      ,is_positive:0, component:2)
+#Word.create(word:"blinky"      ,is_positive:0, component:2)
+Word.create(word:"fearsome"      ,is_positive:0, component:2)
 Word.create(word:"thing"      ,is_positive:0, component:3)
 
 #Word.create(word:"sharply dressed"    ,is_positive:1, component:1)
