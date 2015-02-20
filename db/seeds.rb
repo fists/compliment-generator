@@ -111,15 +111,15 @@ Word.create(word:"hungry"     ,is_positive:0, component:1)
 Word.create(word:"shallow"    ,is_positive:0, component:2)
 Word.create(word:"snack"      ,is_positive:0, component:3)
 
-Word.create(word:"minty"      ,is_positive:1, component:1)
-Word.create(word:"fresh"      ,is_positive:1, component:2)
+Word.create(word:"minty"      ,is_positive:0, component:1)
+Word.create(word:"fresh"      ,is_positive:0, component:2)
 Word.create(word:"vegetable"  ,is_positive:0, component:3)
 
 Word.create(word:"fragrant"   ,is_positive:0, component:1)
 Word.create(word:"snack"      ,is_positive:0, component:2)
 Word.create(word:"machine"    ,is_positive:0, component:3)
 
-Word.create(word:"colorful"   ,is_positive:1, component:1)
+Word.create(word:"colorful"   ,is_positive:0, component:1)
 Word.create(word:"knitted"    ,is_positive:0, component:2)
 Word.create(word:"sock"       ,is_positive:0, component:3)
 
@@ -150,3 +150,44 @@ Word.create(word:"saint"      ,is_positive:1, component:3)
 Word.create(word:"crunchy"    ,is_positive:0, component:1)
 Word.create(word:"grape"      ,is_positive:0, component:2)
 Word.create(word:"drink"      ,is_positive:0, component:3)
+
+Word.create(word:"hungry"    ,is_positive:0, component:1)
+Word.create(word:"hamburger"      ,is_positive:0, component:2)
+Word.create(word:"hamster"      ,is_positive:0, component:3)
+
+Word.create(word:"stubborn"    ,is_positive:0, component:1)
+Word.create(word:"flimsy"      ,is_positive:0, component:2)
+Word.create(word:"goat"      ,is_positive:0, component:3)
+
+Word.create(word:"cardboard"    ,is_positive:0, component:1)
+#Word.create(word:"spastic"      ,is_positive:0, component:2)
+Word.create(word:"plastic"      ,is_positive:0, component:2)
+Word.create(word:"rockstar"      ,is_positive:1, component:3)
+
+Word.create(word:"big"    ,is_positive:0, component:1)
+Word.create(word:"stupid"      ,is_positive:0, component:2)
+Word.create(word:"doo-doo head"      ,is_positive:0, component:3)
+
+Word.create(word:"glowing"    ,is_positive:0, component:1)
+Word.create(word:"blinky"      ,is_positive:0, component:2)
+Word.create(word:"thing"      ,is_positive:0, component:3)
+
+Word.create(word:"sharply dressed"    ,is_positive:1, component:1)
+Word.create(word:"box of"      ,is_positive:0, component:2)
+Word.create(word:"trashcan"      ,is_positive:0, component:3)
+
+Word.create(word:"deadly"    ,is_positive:0, component:1)
+Word.create(word:"dangerous"      ,is_positive:0, component:2)
+Word.create(word:"animal"      ,is_positive:0, component:3)
+
+Word.create(word:"genius"    ,is_positive:1, component:1)
+Word.create(word:"internet"      ,is_positive:0, component:2)
+Word.create(word:"rap god"      ,is_positive:1, component:3)
+
+Word.create(word:"rhythmic"    ,is_positive:0, component:1)
+Word.create(word:"bouncing"      ,is_positive:0, component:2)
+Word.create(word:"lyrical genius"      ,is_positive:1, component:3)
+
+Word.create(word:"tumbling"    ,is_positive:0, component:1)
+Word.create(word:"tumbling"      ,is_positive:0, component:2)
+Word.create(word:"dill weed"      ,is_positive:0, component:3)

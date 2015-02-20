@@ -11,7 +11,8 @@ class WelcomeController < ApplicationController
   def index
     @first_word, @second_word, @third_word = {}
     good = false
-    while !good
+    # while !good
+    while good != 1
       puts "rolling the dice...\n"
 
       Word.uncached do
@@ -22,13 +23,27 @@ class WelcomeController < ApplicationController
       puts @first_word
       puts @second_word
       puts @third_word
-      good = [@first_word.is_positive?, @second_word.is_positive?, @third_word.is_positive?].any?
+
+      #----- if any words are positive, we're good
+      # good = [@first_word.is_positive?, @second_word.is_positive?, @third_word.is_positive?].any?
+      #----- OR
+
+      #----- if EXACTLY ONE word is postive, we're good
+      good = @first_word.is_positive.to_i + @second_word.is_positive.to_i + @third_word.is_positive.to_i
+      #----- (requires an extension of to_i to allow integer math on booleans)
+
+      #----- see how long string is, and re-roll if it's too long
+      length = @first_word.word.length + @second_word.word.length + @third_word.word.length + 5
+      good = -3 if length > 35
     end
 
     @preamble = "never change,"
-    @butan = "it's goddamn #{Time.now.in_time_zone('Eastern Time (US & Canada)').strftime("%A").downcase}"
+    @butan = "hit me"
 
+    #----- use this to set width of ribbon in haml
+    @width = length * 1.6
   end
+
 
  # first must be adjective
  # second must be adjective-or-noun
