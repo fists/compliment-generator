@@ -38,7 +38,7 @@ class WelcomeController < ApplicationController
     end
 
     @preamble = "never change,"
-    @butan = "hit me"
+    @butan = "aw yiss!"
 
     #----- use this to set width of ribbon in haml
     @width = length * 1.6
