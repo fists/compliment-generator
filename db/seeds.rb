@@ -81,7 +81,7 @@ Word.create(word:"hipster"    ,is_positive:0, component:3)
 
 Word.create(word:"dusty"      ,is_positive:0, component:1)
 Word.create(word:"heavy"      ,is_positive:0, component:2)
-Word.create(word:"lard"       ,is_positive:0, component:3)
+#Word.create(word:"lard"       ,is_positive:0, component:3)
 
 Word.create(word:"goddamn"    ,is_positive:0, component:1)
 Word.create(word:"chicken"    ,is_positive:0, component:2)
@@ -172,7 +172,8 @@ Word.create(word:"glowing"    ,is_positive:0, component:1)
 Word.create(word:"blinky"      ,is_positive:0, component:2)
 Word.create(word:"thing"      ,is_positive:0, component:3)
 
-Word.create(word:"sharply dressed"    ,is_positive:1, component:1)
+#Word.create(word:"sharply dressed"    ,is_positive:1, component:1)
+Word.create(word:"sharp"    ,is_positive:1, component:1)
 Word.create(word:"box of"      ,is_positive:0, component:2)
 Word.create(word:"trashcan"      ,is_positive:0, component:3)
 
@@ -181,12 +182,13 @@ Word.create(word:"dangerous"      ,is_positive:0, component:2)
 Word.create(word:"animal"      ,is_positive:0, component:3)
 
 Word.create(word:"genius"    ,is_positive:1, component:1)
-Word.create(word:"internet"      ,is_positive:0, component:2)
+#Word.create(word:"internet"      ,is_positive:0, component:2)
+Word.create(word:"sack of"      ,is_positive:0, component:2)
 Word.create(word:"rap god"      ,is_positive:1, component:3)
 
 Word.create(word:"rhythmic"    ,is_positive:0, component:1)
 Word.create(word:"bouncing"      ,is_positive:0, component:2)
-Word.create(word:"lyrical genius"      ,is_positive:1, component:3)
+#Word.create(word:"lyrical genius"      ,is_positive:1, component:3)
 
 Word.create(word:"tumbling"    ,is_positive:0, component:1)
 Word.create(word:"tumbling"      ,is_positive:0, component:2)
