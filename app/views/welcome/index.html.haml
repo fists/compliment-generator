@@ -10,26 +10,29 @@
 
 .ribbon{style:"max-width:#{@width}rem;"}
   .ribbon-content
-    #insult
-      you
-      #{@first_word.word}
-      #{@second_word.word}
-      #{@third_word.word}
-      -#  {@first_word.word}
-      -#  {@second_word.word}
-      -#  {@third_word.word}
-      -#{"beautiful"}
-      -#{"goddamn"}
-      -#{"disaster"}
-      -# terribly talented hack
-      -# wonderfully shit programmer
-      -# gigantic yellow pillock
-      -# dense lovely freak
-      -# freaky sane inspiration
-      -# handsy helpful hero
-      -# funny solution maker
-      -# brilliant ass goose
-      -# sideways meat tornado
+    .inset
+      #insult
+        you
+        #{@first_word.word}
+        #{@second_word.word}
+        #{@third_word.word}
+        -#  {@first_word.word}
+        -#  {@second_word.word}
+        -#  {@third_word.word}
+        -#{"beautiful"}
+        -#{"goddamn"}
+        -#{"disaster"}
+        -# terribly talented hack
+        -# wonderfully shit programmer
+        -# gigantic yellow pillock
+        -# dense lovely freak
+        -# freaky sane inspiration
+        -# handsy helpful hero
+        -# funny solution maker
+        -# brilliant ass goose
+        -# sideways meat tornado
+  #taper
+    .inset
 %a.button.pink.skew{href:"javascript:history.go(0)", style:"width:#{(@butan.length*0.7)}rem;"}
   #{@butan}
   -#tell me i'm pretty
