@@ -27,7 +27,8 @@ Word.create(word:"freaky"     ,is_positive:0, component:1)
 #Word.create(word:"but sane"   ,is_positive:1, component:2)
 Word.create(word:"ol'"   ,is_positive:0, component:2)
 #Word.create(word:"inspiration",is_positive:1, component:3)
-Word.create(word:"model",is_positive:1, component:3)
+#Word.create(word:"model",is_positive:1, component:3)
+Word.create(word:"shit!",is_positive:0, component:3)
 
 Word.create(word:"handsy"     ,is_positive:0, component:1)
 Word.create(word:"helpful"    ,is_positive:1, component:2)
@@ -74,7 +75,8 @@ Word.create(word:"bum"        ,is_positive:0, component:3)
 
 Word.create(word:"fancy"      ,is_positive:1, component:1)
 Word.create(word:"fucking"    ,is_positive:0, component:2)
-Word.create(word:"donkey"     ,is_positive:0, component:3)
+#Word.create(word:"donkey"     ,is_positive:0, component:3)
+Word.create(word:"chucklehead"     ,is_positive:0, component:3)
 
 #Word.create(word:"rich"       ,is_positive:0, component:1)
 Word.create(word:"priviliged"       ,is_positive:0, component:1)
@@ -134,15 +136,16 @@ Word.create(word:"sock"       ,is_positive:0, component:3)
 
 Word.create(word:"cool"       ,is_positive:1, component:1)
 #Word.create(word:"pinball"    ,is_positive:0, component:2)
-Word.create(word:"troll"     ,is_positive:1, component:3)
+Word.create(word:"troll"     ,is_positive:0, component:3)
 #Word.create(word:"wizard"     ,is_positive:1, component:3)
 Word.create(word:"prankster"     ,is_positive:0, component:3)
 
 Word.create(word:"dodgy"      ,is_positive:0, component:1)
-Word.create(word:"rust"       ,is_positive:0, component:2)
+#Word.create(word:"rust"       ,is_positive:0, component:2)
+Word.create(word:"rusty"       ,is_positive:0, component:2)
 Word.create(word:"bucket"     ,is_positive:0, component:3)
 
-Word.create(word:"fake"       ,is_positive:0, component:1)
+Word.create(word:"fake-ass"       ,is_positive:0, component:1)
 Word.create(word:"party"      ,is_positive:0, component:2)
 Word.create(word:"balloon"    ,is_positive:0, component:3)
 
@@ -158,7 +161,8 @@ Word.create(word:"troll"     ,is_positive:0, component:3)
 
 Word.create(word:"salty"      ,is_positive:0, component:1)
 #Word.create(word:"supportive" ,is_positive:0, component:2)
-Word.create(word:"positive" ,is_positive:1, component:2)
+#Word.create(word:"positive" ,is_positive:1, component:2)
+Word.create(word:"crust" ,is_positive:0, component:2)
 #Word.create(word:"saint"      ,is_positive:1, component:3)
 Word.create(word:"child"      ,is_positive:0, component:3)
 
@@ -206,10 +210,26 @@ Word.create(word:"rap god"      ,is_positive:1, component:3)
 
 #Word.create(word:"rhythmic"    ,is_positive:0, component:1)
 Word.create(word:"catchy"    ,is_positive:0, component:1)
-Word.create(word:"bouncing"      ,is_positive:0, component:2)
+#Word.create(word:"bouncing"      ,is_positive:0, component:2)
+Word.create(word:"filthy"      ,is_positive:0, component:2)
 #Word.create(word:"lyrical genius"      ,is_positive:1, component:3)
 Word.create(word:"stuff"      ,is_positive:0, component:3)
 
 Word.create(word:"tumbling"    ,is_positive:0, component:1)
 Word.create(word:"tumbling"      ,is_positive:0, component:2)
-Word.create(word:"dill weed"      ,is_positive:0, component:3)
+#Word.create(word:"dill weed"      ,is_positive:0, component:3)
+Word.create(word:"dickhead"      ,is_positive:0, component:3)
+
+Word.create(word:"fucking"  ,is_positive:0, component:1)
+Word.create(word:"goddamn"    ,is_positive:0, component:2)
+Word.create(word:"shoe"   ,is_positive:0, component:3)
+
+Word.create(word:"dumb"  ,is_positive:0, component:1)
+Word.create(word:"shitty"    ,is_positive:0, component:2)
+Word.create(word:"loser"   ,is_positive:0, component:3)
+
+Word.create(word:"noob"  ,is_positive:0, component:1)
+Word.create(word:"dog"  ,is_positive:0, component:2)
+Word.create(word:"butt"    ,is_positive:0, component:3)
+
+Word.create(word:"disaster"   ,is_positive:0, component:3)

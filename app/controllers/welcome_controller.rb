@@ -25,6 +25,7 @@ class WelcomeController < ApplicationController
       puts @third_word
 
       #----- if any words are positive, we're good
+      #good = [@first_word.is_positive?, @second_word.is_positive?, @third_word.is_positive?].any?
       good = [@first_word.is_positive?, @second_word.is_positive?, @third_word.is_positive?].any?
       #----- OR
 
@@ -41,7 +42,7 @@ class WelcomeController < ApplicationController
     @butan = "aw yiss!"
 
     #----- use this to set width of ribbon in haml
-    @width = length * 1.6
+    @width = length * 1.65
   end
 
 
