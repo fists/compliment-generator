@@ -53,3 +53,147 @@
  right: 0;
  border-width: 1em 1em 0 0;
 }
+
+@media (max-width: 450px) {
+
+  .ribbon {
+    width: 300px !important;
+    margin: .5rem auto 1.5rem;
+    //padding: 1rem;
+    &::after,&::before {
+      background: none;
+      border: none;
+      }
+    .ribbon-content {
+      &::after,&::before {
+        background: none;
+        border: none;
+      }
+      #insult {
+        font-size: 4rem !important;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+}
+
+//  .ribbon {
+//      width: 150px;
+//
+//
+//
+//  font-size: 16px !important;
+//   /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+//   box-shadow: 0 0 0 0;
+//
+//   //width: 50%;
+//   width: auto;
+//   position: relative;
+//   //background: #ba89b6;
+//   //background: mistyrose;
+//   background: pink;
+//   color: #fff;
+//   text-align: center;
+//   padding: 0;
+//   margin: 0;
+//
+//  &::before, &::after {
+//   content: "";
+//   position: relative;
+//   display: block;
+//   bottom: 0;
+//   //border: 1.5em solid pink;//#986794;
+//   border: none;
+//   z-index: 0;
+//  }
+//
+//  .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+//   content: "";
+//   position: absolute;
+//   display: block;
+//   border: none;
+//   bottom: 0;
+//  }
+//  .ribbon .ribbon-content:before {
+//   left: 0;
+//   border:none;
+//  }
+//  .ribbon .ribbon-content:after {
+//   right: 0;
+//   border: none;
+//  }
+//
+//
+//
+//  }
+//  .ribbon .ribbon-content {
+//      position: relative;
+//      width: 100px;
+//      height: 150px;
+//      margin-left: auto;
+//      margin-right: auto;
+//      background: palevioletred;
+//  /*    box-shadow: inset 0px 15px 10px -10px rgba(0, 0, 0, 0.3), 5px 0px 5px -5px rgba(0, 0, 0, 0.3), -5px 0px 5px -5px rgba(0, 0, 0, 0.3);
+//      -moz-box-shadow: inset 0px 15px 10px -10px rgba(0, 0, 0, 0.3), 5px 0px 5px -5px rgba(0, 0, 0, 0.3), -5px 0px 5px -5px rgba(0, 0, 0, 0.3);
+//      -webkit-box-shadow: inset 0px 15px 10px -10px rgba(0, 0, 0, 0.3), 5px 0px 5px -5px rgba(0, 0, 0, 0.3), -5px 0px 5px -5px rgba(0, 0, 0, 0.3);*/
+//  }
+//  .ribbon .ribbon-content .inset {
+//      position: relative;
+//      margin-left: auto;
+//      margin-right: auto;
+//      width: 70px;
+//      height: 150px;
+//      background: pink;
+//  /*    box-shadow: inset 0px 15px 10px -10px rgba(0, 0, 0, 0.3);
+//      -moz-box-shadow: inset 0px 15px 10px -10px rgba(0, 0, 0, 0.3);
+//      -webkit-box-shadow: inset 0px 15px 10px -10px rgba(0, 0, 0, 0.3);*/
+//  }
+//  .ribbon .ribbon-content:after {
+//      content:'';
+//      position: absolute;
+//      top: 0px;
+//      left: 6px;
+//      width: 86px;
+//      height: 155px;
+//      /*border-left: 1px dashed whitesmoke;
+//      border-right: 1px dashed whitesmoke;*/
+//  }
+//  .ribbon-content:before {
+//      content:'';
+//      position: absolute;
+//      top: 0px;
+//      left: 7px;
+//      width: 86px;
+//      height: 155px;
+//      /*border-left: 1px dashed whitesmoke;
+//      border-right: 1px dashed whitesmoke;*/
+//  }
+//  .ribbon .taper {
+//      width: 70px;
+//      height: 70px;
+//      background: palevioletred;
+//      position: relative;
+//      margin-left: auto;
+//      margin-right: auto;
+//      bottom: 35px;
+//      -webkit-transform: rotate(45deg);
+//      transform: rotate(45deg);
+//      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+//      -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+//      -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+//      z-index: -1;
+//  }
+//  .ribbon .taper .inset {
+//      width: 50px;
+//      height: 50px;
+//      top: 10px;
+//      left: 10px;
+//      background: pink;
+//      position: relative;
+//      margin: 0;
+//  }
+//
+//}
+//
