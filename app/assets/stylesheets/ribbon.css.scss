@@ -58,7 +58,10 @@
 
   .ribbon {
     width: 300px !important;
-    margin: .5rem auto 1.5rem;
+//    margin: .5rem auto 1.5rem;
+    margin: 0.5rem auto 7.5rem;
+    //padding-bottom: 0;
+    padding: 0;
     //padding: 1rem;
     &::after,&::before {
       background: none;
@@ -84,7 +87,8 @@
         height: 2rem;
         background: linear-gradient(-135deg, transparent 75%, pink 75%) 0 50%, linear-gradient(135deg, transparent 75%, pink 75%) 0 50%;
         background-repeat: repeat-x;
-        background-size: 2.3rem 2rem;
+        //background-size: 2.3rem 2rem;
+        background-size: 1.9rem 2rem;
       }
 
     #taper{
@@ -97,12 +101,14 @@
 //      padding: 1rem .3rem;
 //      border-bottom: none;
 
-
+background: palevioletred;
 border: 3px white dashed;
 margin: 1rem 0.3rem;
-padding: 1rem .3rem;
+//padding: 1rem .3rem;
+padding: 1rem 1rem;
 border-bottom: none;
-margin-bottom: -.6rem;
+//margin-bottom: -.6rem;
+margin-bottom: -1rem;
 
     }
 
@@ -118,6 +124,9 @@ margin-right: auto;
 bottom: 95px;
 transform: rotate(45deg);
 z-index: -1;
+
+left: -1%;
+border-bottom: white 3px dashed;
 //z-index: -1;
 
         //  border: 3px white dashed;
@@ -147,6 +156,7 @@ z-index: -1;
     }
 
     .ribbon-content {
+      padding: 0.5rem 1rem 0;
       &::after,&::before {
         background: none;
         border: none;
