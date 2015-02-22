@@ -57,6 +57,7 @@
 @media (max-width: 450px) {
 
   .ribbon {
+    .ribbon-content{box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);}
     width: 300px !important;
 //    margin: .5rem auto 1.5rem;
     margin: 0.5rem auto 7.5rem;
@@ -93,6 +94,7 @@
 
     #taper{
       height: 0;
+      background: pink;
     }
 
     .inset {
@@ -114,19 +116,68 @@ margin-bottom: -1rem;
 
     #taper .inset{
 
-margin-bottom: -1rem;
-width: 9rem;
-height: 8rem;
-background: palevioletred;
+    //  margin-bottom: -1rem;
+    //  width: 9rem;
+    //  height: 8rem;
+    //  //background: palevioletred;
+    //  background: pink;
+    //  position: relative;
+    //  margin-left: auto;
+    //  margin-right: auto;
+    //  //bottom: 95px;
+    //  bottom: 87px;
+    //  transform: rotate(45deg);
+    //  z-index: -1;
+    //  
+    //  left: -1%;
+    //  //border-bottom: white 3px dashed;
+    //  border: none;
+    //  box-shadow: 5px 5px 15px rgba(0,0,0,.12);
+
+padding: 0;
+margin: 0;
+width: 12rem;
+height: 12rem;
+background: pink;
 position: relative;
-margin-left: auto;
-margin-right: auto;
-bottom: 95px;
+bottom: 87px;
 transform: rotate(45deg);
 z-index: -1;
+left: 18%;
+  //top: -110px;
+//top:-100px;
+top: -140px;
+border: none;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
 
-left: -1%;
-border-bottom: white 3px dashed;
+.dingle{
+  //background: pink;
+  //margin: 1rem;
+  //padding: 1rem;
+//background: palevioletred;
+//margin: 0.1rem;
+//padding: 1.8rem;
+//height: 60px;
+//border: 3px dashed white;
+background: palevioletred;
+margin: 1rem;
+//padding: 3.4rem;
+padding: 2.9rem;
+left: -15px;
+position: relative;
+height: 60px;
+border: 3px dashed white;
+
+  &::after{
+    position: relative;
+    top: 60px;
+    content: ";)";
+    left: 40px;
+    font-family: initial;
+    transform: rotate(45deg);
+    display: inline-block;
+  }
+}
 //z-index: -1;
 
         //  border: 3px white dashed;
@@ -156,7 +207,8 @@ border-bottom: white 3px dashed;
     }
 
     .ribbon-content {
-      padding: 0.5rem 1rem 0;
+      //padding: 0.5rem 1rem 0;
+      padding: 0.5rem 1.5rem 0;
       &::after,&::before {
         background: none;
         border: none;
