@@ -1,35 +1,30 @@
-# ruby-getting-started
+# compliment-generator
 
-A barebones Rails app, which can easily be deployed to Heroku.
+A positive twist on your common insult generator.
 
-This application support the [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby) article - check it out.
+This is my first Ruby app, and I have little to no idea what I'm doing. Suggestions on how to do things better are welcome.
 
-## Running Locally
+## New Features
 
-Make sure you have Ruby installed.  Also, install the [Heroku Toolbelt](https://toolbelt.heroku.com/).
+22 Feb 2015
+* Responsive layout allows you to compliment on the go!
 
-```sh
-$ git clone git@github.com:heroku/ruby-getting-started.git
-$ cd ruby-getting-started
-$ bundle install
-$ rake db:create db:migrate
-$ foreman start web
-```
+18 Feb 2015
+* It works!
 
-Your app should now be running on [localhost:5000](http://localhost:5000/).
 
-## Deploying to Heroku
+## CSS Magic
 
-```sh
-$ heroku create
-$ git push heroku master
-$ heroku run rake db:migrate
-$ heroku open
-```
+Some of the fancy pure-CSS imagery in this app modifies code found in artles by [Lea Verou](http://lea.verou.me/css3patterns/#seigaiha) (seigaiha background), [James Koster](http://jameskoster.co.uk/snippets/pure-css-3d-ribbon/) (horizontal ribbon), and [simurai](http://simurai.com/archive/buttons/) (bon bon button).
 
-## Documentation
+The mobile-responsive vertical ribbon layout is a new design that I will continue to refine. Updates to it will likely be published here first.
 
-For more information about using Ruby on Heroku, see these Dev Center articles:
+## Forthcoming features:
 
-- [Ruby on Heroku](https://devcenter.heroku.com/categories/ruby)
+* compliment counter (indicate how many compliments have been generated)
+* use javascript to request new compliments instead of a full page refresh
+* CSS cleanup
 
+## Wat
+
+Built on Heroku's [Getting Started with Ruby on Heroku](https://devcenter.heroku.com/articles/getting-started-with-ruby) app/article.

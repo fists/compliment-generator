@@ -233,3 +233,5 @@ Word.create(word:"dog"  ,is_positive:0, component:2)
 Word.create(word:"butt"    ,is_positive:0, component:3)
 
 Word.create(word:"disaster"   ,is_positive:0, component:3)
+Word.create(word:"lotion"   ,is_positive:0, component:3)
+Word.create(word:"basket"   ,is_positive:0, component:3)
