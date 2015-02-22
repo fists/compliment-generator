@@ -103,8 +103,8 @@
 //      padding: 1rem .3rem;
 //      border-bottom: none;
 
-background: palevioletred;
-border: 3px white dashed;
+background: white;//palevioletred;
+border: 3px dashed pink;//white;
 margin: 1rem 0.3rem;
 //padding: 1rem .3rem;
 padding: 1rem 1rem;
@@ -159,14 +159,15 @@ box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
 //padding: 1.8rem;
 //height: 60px;
 //border: 3px dashed white;
-background: palevioletred;
+
+background: white;//palevioletred;
 margin: 1rem;
 //padding: 3.4rem;
 padding: 2.9rem;
 left: -15px;
 position: relative;
 height: 60px;
-border: 3px dashed white;
+border: 3px dashed pink;//white;
 
   &::after{
     position: relative;
@@ -215,8 +216,9 @@ border: 3px dashed white;
       }
       #insult {
         font-size: 4rem !important;
-        margin: 0;
+        margin: .5rem 0 1rem !important;
         padding: 0;
+        color: palevioletred;
       }
     }
   }
