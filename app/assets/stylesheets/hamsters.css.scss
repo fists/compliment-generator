@@ -2,6 +2,8 @@
 Here the Hamsters Roam Fre
 */
 
+$transparent: rgba(0,0,0,0);
+
 @import 'ribbon.css';
 @import 'buttons.css';
 //@import 'boom.css';
@@ -36,28 +38,67 @@ body {
     padding-bottom: .7rem;
 
     @media (max-width: 360px) {
-      #title {font-size: 1.2rem !important;}
+      #title {
+        font-size: 1.6rem !important;
+        .the {
+          left: 1.3rem;
+        }
+      }
     }
 
     @media (max-width: 450px) {
+      white-space: nowrap;
       position: relative;
       //top: -4.5rem;
       top: -3rem;
       padding-bottom: 0;
 
       #title {
-        font-size: 1.5rem;
+
+        &::after{
+          //background-image: radial-gradient(pink, pink 65%, $transparent 70%, $transparent);
+          background-image: radial-gradient(circle at 50% 30%, pink, pink 65%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0));
+          top: -10px;
+          z-index: -1;
+        }
+
+        &:hover::after{
+          -webkit-animation: none;
+        }
+
+        .the {
+          font-size: .75rem;
+          display: inline;
+          position: relative;
+          top: -1rem;
+          left: 2rem;
+          //-webkit-transform: rotate(30deg);
+          transform: rotateZ(30deg);
+          padding: 0; margin: -1rem;
+          //color: #fdd8de;
+          opacity: .7;
+          text-shadow:
+                     -1px -1px 0 palevioletred,
+                      1px -1px 0 palevioletred,
+                      -1px 1px 0 palevioletred,
+                       1px 1px 0 palevioletred;
+          //color: whitesmoke;
+          //text-shadow: none;
+        }
+        //font-size: 1.5rem;
+        font-size: 1.7rem;
         background: pink;
         opacity: 100%;
         color: white;
-        top: -12px;
+        top: -6px;
         height: 85px;
+        line-height: 2.7rem;
 
-        &:after{
+        &::after{
           bottom:-6px;
         }
 
-        &:before{
+        &::before{
           background: none;
         }
       }
@@ -66,6 +107,9 @@ body {
   }
 
   #title {
+
+    .the{display:inline;}
+
     position: relative;
     top: 1.6rem;
     width:110%;
