@@ -365,7 +365,7 @@ body {
     
     //position: relative !important;
     //top: 52%;
-
+  background: white !important;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -381,7 +381,40 @@ body {
 
     .credits{
       background: white;
-      box-shadow: 0 0 25px rgba(0,0,0,.2);
+      //box-shadow: 0 0 25px rgba(0,0,0,.2);
+
+
+      margin: 0rem 0rem 0rem 0rem;
+      bottom: 3.1rem;
+      //right: 15vw;
+      //width: 94vw;
+    //  right: 5%;
+    //  width: 90%;
+    //  padding: auto 1rem;
+
+      right: 6%;
+      width: 80%;
+      padding: 2rem 2rem !important;
+      padding-bottom: 4rem !important;
+
+      &::after{
+        //width: 100%;
+        //top:-20rem;
+        //right: 2rem;
+        //color: pink;
+        //content:"Tap again to close";
+        //height: 5rem;
+        //padding: 5rem;
+        color: pink;
+        content: "Tap again to close";
+        padding: .5rem;
+        display: block;
+      }
+
+      &:active {
+      display: none;
+    }
+
     }
    }
   }
