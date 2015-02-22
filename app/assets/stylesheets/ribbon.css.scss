@@ -2,6 +2,8 @@
  font-size: 32px !important;
  /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
  box-shadow: 0px 10px 20px rgba(0,0,0,.1);
+ -webkit-box-shadow: 0px 10px 20px rgba(0,0,0,.1);
+ -moz-box-shadow: 0px 10px 20px rgba(0,0,0,.1);
 
  //width: 50%;
  width: 76%;
@@ -28,12 +30,16 @@
  border-right-width: 1.5em;
  border-left-color: transparent;
  box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+ -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,.05);
+ -moz-box-shadow: 10px 10px 10px rgba(0,0,0,.05);
 }
 &::after {
  right: -2em;
  border-left-width: 1.5em;
  border-right-color: transparent;
  box-shadow: -10px 10px 10px rgba(0,0,0,.05);
+ -webkit-box-shadow: -10px 10px 10px rgba(0,0,0,.05);
+ -moz-box-shadow: -10px 10px 10px rgba(0,0,0,.05);
 }
 }
 .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
@@ -57,7 +63,11 @@
 @media (max-width: 450px) {
 
   .ribbon {
-    .ribbon-content{box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);}
+    .ribbon-content {
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
     width: 300px !important;
 //    margin: .5rem auto 1.5rem;
     margin: 0.5rem auto 7.5rem;
@@ -142,6 +152,7 @@ background: pink;
 position: relative;
 bottom: 87px;
 transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
 z-index: -1;
 left: 18%;
   //top: -110px;
@@ -149,6 +160,8 @@ left: 18%;
 top: -140px;
 border: none;
 box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
+-webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
+-moz-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.12);
 
 .dingle{
   //background: pink;
@@ -176,6 +189,7 @@ border: 3px dashed pink;//white;
     left: 40px;
     font-family: initial;
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     display: inline-block;
   }
 }
