@@ -15,7 +15,7 @@ This is my first Ruby app, and I have little to no idea what I'm doing. Suggesti
 
 ## CSS Magic
 
-Some of the fancy pure-CSS imagery in this app modifies code found in artles by [Lea Verou](http://lea.verou.me/css3patterns/#seigaiha) (seigaiha background), [James Koster](http://jameskoster.co.uk/snippets/pure-css-3d-ribbon/) (horizontal ribbon), and [simurai](http://simurai.com/archive/buttons/) (bon bon button).
+Some of the fancy pure-CSS imagery in this app modifies code found in articles by [Lea Verou](http://lea.verou.me/css3patterns/#seigaiha) (seigaiha background), [James Koster](http://jameskoster.co.uk/snippets/pure-css-3d-ribbon/) (horizontal ribbon), and [simurai](http://simurai.com/archive/buttons/) (bon bon button).
 
 The mobile-responsive vertical ribbon layout is a new design that I will continue to refine. Updates to it will likely be published here first.
 

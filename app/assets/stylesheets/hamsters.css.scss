@@ -398,28 +398,55 @@ body {
 
       right: 5%;//6%; //moving with adjusted footer width
       width: 90vw;//81%;
-      padding: 2rem 2rem !important;
-      padding-bottom: 4rem !important;
+      padding: 0 2rem 3rem !important;//padding: 2rem 2rem !important;
+      //padding-bottom: 4rem !important;
       //box-shadow: 0px -20px 20px white;
       box-shadow: 0px -10px 20px rgba(0,0,0,.15);
 
-      &::after{
-        //width: 100%;
-        //top:-20rem;
-        //right: 2rem;
-        //color: pink;
-        //content:"Tap again to close";
-        //height: 5rem;
-        //padding: 5rem;
-        color: pink;
-        content: "< tap here to close >";
-        padding: .5rem;
+//      &::before{
+//        color: silver;
+//        font-size: .75rem;
+//        content: "< tap away to close >";
+//        transform: rotateZ(-90deg);
+//        //line-height: .5rem;
+//        white-space: pre;
+//        //padding: .5rem;
+//        display: block;
+//        position: relative;
+//        top: 2.4rem;
+//        left: -44vw;
+      //}
+
+      &::before{
+        color: silver;
+        font-size: .75rem;
+        content: "tap to close >";
+        transform: rotateZ(-90deg);
+        white-space: pre;
         display: block;
+        position: relative;
+        top: 3.14159rem;
+        left: -44vw;
       }
 
-      &:active {
-      display: none;
-    }
+      //&::after{
+      //  //width: 100%;
+      //  //top:-20rem;
+      //  //right: 2rem;
+      //  //color: pink;
+      //  //content:"Tap again to close";
+      //  //height: 5rem;
+      //  //padding: 5rem;
+      //  color: pink;
+      //  content: "^\A< tap away to close >";
+      //  white-space: pre;
+      //  //padding: .5rem;
+      //  display: block;
+      //}
+
+      //&:active {
+      //  display: none;
+      //}
 
     }
    }
