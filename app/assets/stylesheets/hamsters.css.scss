@@ -341,9 +341,16 @@ body {
       //}
     }
 
-    a:hover + .credits,a:active+.credits {
+    //a:hover + .credits,a:active+.credits {
+    a:hover + .credits,a:focus+.credits {
       display: block;
     }
+
+  //  //a:not(:hover) + .credits,
+  //    a:not(:focus) + .credits {
+  //  //a:not(:hover) + .credits {
+  //    display: none;
+  //  }
   }
 }
 
@@ -424,6 +431,7 @@ body {
         font-size: .75rem;
         content: "tap to close >";
         transform: rotateZ(-90deg);
+        -webkit-transform: rotateZ(-90deg);
         white-space: pre;
         display: block;
         position: relative;

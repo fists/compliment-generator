@@ -5,9 +5,9 @@ class Word < ActiveRecord::Base
   scope :adverb, -> {where(component: 1)}           # in my seed set of words, 1: adjective,
   scope :adjective, -> {where(component: 2)}        # 2: adjective or noun,
   scope :noun, -> {where(component: 3)}             # 3: noun;
-                                                    # but effectively this is how we're using them.
+                                                    # but effectively this is how we're using them
 
   def to_s
-    word + " " + is_positive.to_s
+    word
   end
 end

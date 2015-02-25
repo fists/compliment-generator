@@ -6,6 +6,28 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+#Preamble.all.destroy_all
+#Preamble.create(greeting:"lookin real slick")
+#Preamble.create(greeting:"keep on keepin on")
+#Preamble.create(greeting:"an inspiration to us all")
+#Preamble.create(greeting:"don't let anyone dull your sparkle")
+#Preamble.create(greeting:"the world needs more like you")
+#Preamble.create(greeting:"never change")
+#Preamble.create(greeting:"always a pleasure")
+#
+#Butan.all.destroy_all
+#Butan.create(closing:"tell me i'm pretty")
+#Butan.create(closing:"hit me again")
+#Butan.create(closing:"moar")
+#Butan.create(closing:"say something nice")
+#Butan.create(closing:"again")
+#Butan.create(closing:"yeah")
+#Butan.create(closing:"great")
+#Butan.create(closing:"oh, ok")
+#Butan.create(closing:"keep em coming")
+#Butan.create(closing:"yep")
+#Butan.create(closing:"aw yiss")
+
 Word.all.destroy_all
 Word.create(word:"beautiful"  ,is_positive:1, component:1)
 Word.create(word:"goddamn"    ,is_positive:0, component:2)
@@ -235,3 +257,7 @@ Word.create(word:"butt"    ,is_positive:0, component:3)
 Word.create(word:"disaster"   ,is_positive:0, component:3)
 Word.create(word:"lotion"   ,is_positive:0, component:3)
 Word.create(word:"basket"   ,is_positive:0, component:3)
+Word.create(word:"brisket"   ,is_positive:0, component:3)
+
+Word.create(word:"greasy"   ,is_positive:0, component:1)
+Word.create(word:"maybe"   ,is_positive:0, component:2)
