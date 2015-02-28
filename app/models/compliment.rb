@@ -29,6 +29,10 @@ class Compliment
     words.reduce(5) { |total, word| total += word.word.length }
   end
 
+  def width
+    length * 1.65
+  end
+
   def to_s
     words.map(&:to_s).join(' ')
   end

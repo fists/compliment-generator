@@ -102,6 +102,8 @@
         width: 100%;
         height: 2rem;
         background: linear-gradient(-135deg, transparent 75%, pink 75%) 0 50%, linear-gradient(135deg, transparent 75%, pink 75%) 0 50%;
+        background: -webkit-linear-gradient(-135deg, transparent 75%, pink 75%) 0 50%, linear-gradient(135deg, transparent 75%, pink 75%) 0 50%;
+        background: -moz-linear-gradient(-135deg, transparent 75%, pink 75%) 0 50%, linear-gradient(135deg, transparent 75%, pink 75%) 0 50%;
         background-repeat: repeat-x;
         //background-size: 2.3rem 2rem;
         background-size: 30px 32px;//1.9rem 2rem;

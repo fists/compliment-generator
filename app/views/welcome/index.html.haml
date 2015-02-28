@@ -1,45 +1,14 @@
 #preamble
-  #{@preamble}
-  -#lookin real slick,
-  -# keep on keepin on,
-  -# an inspiration to us all,
-  -# don't let anyone dull your sparkle,
-  -# the world needs more like you,
-  -# never change,
-  -# always a pleasure,
+  = @preamble
 
-.ribbon{style:"max-width:#{@width}rem;"}
+.ribbon{style:"max-width:#{@compliment.width}rem;"}
   .ribbon-content
     .inset
       #insult
         you #{@compliment}
-        -#  {@first_word.word}
-        -#  {@second_word.word}
-        -#  {@third_word.word}
-        -#{"beautiful"}
-        -#{"goddamn"}
-        -#{"disaster"}
-        -# terribly talented hack
-        -# wonderfully shit programmer
-        -# gigantic yellow pillock
-        -# dense lovely freak
-        -# freaky sane inspiration
-        -# handsy helpful hero
-        -# funny solution maker
-        -# brilliant ass goose
-        -# sideways meat tornado
+
   #taper
     .inset
       .dingle
-%a.button.pink.skew{href:"javascript:history.go(0)", style:"width:#{(@butan.length*0.7)}rem;"}
-  #{@butan}
-  -#tell me i'm pretty
-  -# hit me again
-  -# moar
-  -# say something nice
-  -# again
-  -# yeah
-  -# great
-  -# oh, ok
-  -# keep em coming
-  -# yep
+%a#butan.button.pink.skew{href:"javascript:history.go(0)", style:"width:#{(@butan.length*0.7)}rem;"}
+  = @butan
