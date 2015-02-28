@@ -6,6 +6,9 @@ This is my first Ruby app, and I have little to no idea what I'm doing. Suggesti
 
 ## New Features
 
+28 Feb 2015
+* Use JavaScript to get compliments, instead of by page reload.
+
 22 Feb 2015
 * Responsive layout allows you to compliment on the go!
 
@@ -22,7 +25,7 @@ The mobile-responsive vertical ribbon layout is a new design that I will continu
 ## Forthcoming features:
 
 * compliment counter (indicate how many compliments have been generated)
-* use javascript to request new compliments instead of a full page refresh
+* dynamic preambles and button text
 * CSS cleanup
 
 ## Wat

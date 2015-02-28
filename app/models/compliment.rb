@@ -15,9 +15,11 @@ class Compliment
     compliment = new
 
     until compliment.positive?
+      Counter.record_attempted_compliment
       compliment = new
     end
 
+    Counter.record_delivered_compliment
     compliment
   end
 

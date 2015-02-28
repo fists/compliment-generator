@@ -1,7 +1,8 @@
 function fetchNewCompliment () {
   $.get("/compliments/random.json").
     success(function (data) {
-      displayCompliment(data.compliment)
+      displayCompliment(data.compliment);
+      updateAccoutrements(data);
     });
 }
 
@@ -11,6 +12,15 @@ function displayCompliment (compliment) {
 
   $('.ribbon').css('max-width', width + "rem");
   $("#insult").text(text);
+}
+
+function updateAccoutrements (data) {
+  var butanWidth = data.butan.length * 0.7;
+
+  $('#preamble').text(data.preamble);
+  $('#butan').text(data.butan);
+  $('#butan').css('width', butanWidth + "rem");
+  $('#signature').text(data.counter + " compliments and idgaf");
 }
 
 function bindComplimentFetching () {

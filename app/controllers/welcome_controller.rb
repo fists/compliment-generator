@@ -11,8 +11,10 @@ class WelcomeController < ApplicationController
   def index
     @compliment = Compliment.positive
 
-    @preamble = "never change,"
-    @butan = "aw yiss!"
+    @preamble   = Preamble.text #"never change,"
+    @butan      = Butan.text #"aw yiss!"
+
+    @counter    = Counter.delivered_compliments
   end
 
 

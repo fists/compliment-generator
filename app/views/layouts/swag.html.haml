@@ -23,10 +23,11 @@
         tell me i'm pretty
 
     %footer
-      .signature
-        today is
-        #{Time.now.in_time_zone('Eastern Time (US & Canada)').strftime("%A").downcase}
-        and idgaf
+      #signature
+        -#today is
+        -##{Time.now.in_time_zone('Eastern Time (US & Canada)').strftime("%A").downcase}
+        #{@counter} compliments and idgaf
+        -#and idgaf
       .timestamp
         %a.key{href:"#"}
           credits
