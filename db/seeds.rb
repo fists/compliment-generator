@@ -18,6 +18,7 @@ Preamble.create(text:"keep on truckin")
 Preamble.create(text:"yer a wizard")
 Preamble.create(text:"i like your smile")
 Preamble.create(text:"bust a move")
+Preamble.create(text:"deploy that shit")
 
 Butan.all.destroy_all
 Butan.create(text:"tell me i'm pretty")
@@ -32,6 +33,7 @@ Butan.create(text:"keep em coming")
 Butan.create(text:"yep")
 Butan.create(text:"aw yiss")
 Butan.create(text:"sock it to me")
+Butan.create(text:"deploy that shit")
 
 Word.all.destroy_all
 Word.create(word:"beautiful"  ,is_positive:1, component:1)
@@ -242,10 +244,10 @@ Word.create(word:"filthy"      ,is_positive:0, component:2)
 #Word.create(word:"lyrical genius"      ,is_positive:1, component:3)
 Word.create(word:"stuff"      ,is_positive:0, component:3)
 
-Word.create(word:"tumbling"    ,is_positive:0, component:1)
-Word.create(word:"tumbling"      ,is_positive:0, component:2)
-#Word.create(word:"dill weed"      ,is_positive:0, component:3)
-Word.create(word:"dickhead"      ,is_positive:0, component:3)
+#Word.create(word:"tumbling"    ,is_positive:0, component:1)
+#Word.create(word:"tumbling"      ,is_positive:0, component:2)
+##Word.create(word:"dill weed"      ,is_positive:0, component:3)
+#Word.create(word:"dickhead"      ,is_positive:0, component:3)
 
 Word.create(word:"fucking"  ,is_positive:0, component:1)
 Word.create(word:"goddamn"    ,is_positive:0, component:2)
@@ -265,4 +267,18 @@ Word.create(word:"basket"   ,is_positive:0, component:3)
 Word.create(word:"brisket"   ,is_positive:0, component:3)
 
 Word.create(word:"greasy"   ,is_positive:0, component:1)
+Word.create(word:"absolute"   ,is_positive:0, component:1)
 Word.create(word:"maybe"   ,is_positive:0, component:2)
+
+Word.create(word:"big-ass"   ,is_positive:0, component:1)
+Word.create(word:"frightful"   ,is_positive:0, component:2)
+Word.create(word:"flame"  ,is_positive:0, component:3)
+
+Word.create(word:"incredible"   ,is_positive:0, component:1)
+Word.create(word:"edible"   ,is_positive:0, component:2)
+Word.create(word:"egg"   ,is_positive:0, component:3)
+
+Word.create(word:"mean"   ,is_positive:0, component:1)
+Word.create(word:"angry"   ,is_positive:0, component:2)
+Word.create(word:"petting zoo"   ,is_positive:0, component:3)
+
