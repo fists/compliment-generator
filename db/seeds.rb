@@ -18,7 +18,7 @@ Preamble.create(text:"keep on truckin")
 Preamble.create(text:"yer a wizard")
 Preamble.create(text:"i like your smile")
 Preamble.create(text:"bust a move")
-Preamble.create(text:"deploy that shit")
+#Preamble.create(text:"deploy that shit")
 
 Butan.all.destroy_all
 Butan.create(text:"tell me i'm pretty")
@@ -33,7 +33,7 @@ Butan.create(text:"keep em coming")
 Butan.create(text:"yep")
 Butan.create(text:"aw yiss")
 Butan.create(text:"sock it to me")
-Butan.create(text:"deploy that shit")
+#Butan.create(text:"deploy that shit")
 
 Word.all.destroy_all
 Word.create(word:"beautiful"  ,is_positive:1, component:1)
