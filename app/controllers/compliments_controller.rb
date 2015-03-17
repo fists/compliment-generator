@@ -1,8 +1,8 @@
 class ComplimentsController < ApplicationController
   def random
     data = {
-      compliment: Compliment.positive.to_s,
       preamble:   Preamble.text,
+      compliment: Compliment.positive.to_s,
       butan:      Butan.text,
       counter:    Counter.delivered_compliments
     }
