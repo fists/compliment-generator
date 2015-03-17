@@ -282,3 +282,6 @@ Word.create(word:"mean"   ,is_positive:0, component:1)
 Word.create(word:"angry"   ,is_positive:0, component:2)
 Word.create(word:"petting zoo"   ,is_positive:0, component:3)
 
+Word.create(word:"most cowardly"   ,is_positive:0, component:1)
+Word.create(word:"dishonorable"   ,is_positive:0, component:2)
+Word.create(word:"traitor"   ,is_positive:0, component:3)
