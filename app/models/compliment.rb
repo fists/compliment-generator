@@ -11,10 +11,11 @@ class Compliment
     end
   end
 
-  def self.positive
+  def self.for_intensity(intensity)
     compliment = new
 
-    until compliment.positive?
+    # maybe have something to sanitize the intensity here?
+    until compliment.send("#{intensity}?")
       Counter.record_attempted_compliment
       compliment = new
     end
@@ -23,8 +24,24 @@ class Compliment
     compliment
   end
 
-  def positive?
+  #def self.positive
+  #  generate_appropriate_compliment(:positive?)
+  #end
+
+  def gentle?
     words.any?(&:is_positive?) || (length > 35)
+  end
+
+  def busted?
+    words.none?(&:is_positive?)
+  end
+
+  def intense?
+    words.all?(&:is_positive?)
+  end
+
+  def else?
+    # what to do 
   end
 
   def length

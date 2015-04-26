@@ -72,8 +72,8 @@ body {
           top: -1rem;
           left: 2rem;
           //-webkit-transform: rotate(30deg);
-          transform: rotateZ(-30deg);
-          -webkit-transform: rotateZ(-30deg);
+          transform: rotateZ(-10deg);
+          -webkit-transform: rotateZ(-10deg);
           padding: 0; margin: -1rem;
           //color: #fdd8de;
           opacity: .7;
@@ -242,6 +242,75 @@ body {
     #signature {
       font-family: 'Pacifico', serif;
       float: left;
+
+      a {
+        text-decoration: none;
+        color: silver;
+      }
+
+      #kindness_levels {
+        display: block;
+        float: left;
+        width: 50%;
+        margin: .5rem 0;
+          label {
+            width: 100%;
+            float: left;
+            margin: .5rem 0;
+
+            &:nth-child(2) {
+              position: relative;
+              right: 10px;
+            }
+          }
+      }
+
+      #dial {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        float: left;
+        display: block;
+        border-radius: 50%;
+        background: pink;
+        width: 130px;
+        height: 130px;
+        position: relative;
+        right: 25px;
+        transform: rotate(0deg);
+        transition: all 80ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+
+        &::before{
+          position: relative;
+          top: 20px;
+          content: "The\A Kindness\A Dial";
+          left: 0px;
+          white-space: pre;
+          font-size: 22px;
+          line-height: 30px;
+          text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+        }
+
+        &::after {
+          left: -66px;
+          top: 55px;
+          border: solid transparent;
+          content: " ";
+          /* height: 0; */
+          /* width: 0; */
+          position: absolute;
+          pointer-events: none;
+          /* border-color: rgba(0, 0, 0, 0); */
+          border-right-color: pink;
+          border-width: 40px;
+          margin-top: -30px;
+        }
+      }
+
+      #api_instructions {
+        float: left;
+        margin-top: 2rem;
+        color: black;
+        font-family: "Open Sans";
+      }
     }
 
     .timestamp {
@@ -268,6 +337,11 @@ body {
     }
 
     .credits {
+
+      &.left {
+        left: 0rem;
+      }
+
       display: none;
       position: absolute;
       bottom: 5.1rem;
@@ -366,11 +440,27 @@ body {
 }
 
 @media (max-width: 450px) {
+
+  .credits.left{
+    position: absolute;
+    bottom: 50px;
+    width: 86%;
+    background: white;
+    box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.15)
+  }
+
+  #butan {
+    position: fixed;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.7), 0 -4px 4px 0px rgba(255,255,255, 0.7);
+  }
+
   footer {
     //display: none !important;
     //position: absolute !important;
     //bottom: 0;
-    
     //position: relative !important;
     //top: 52%;
     width: 97%;

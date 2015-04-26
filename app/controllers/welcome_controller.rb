@@ -9,10 +9,10 @@ class WelcomeController < ApplicationController
   #end
 
   def index
-    @compliment = Compliment.positive
+    @compliment = Compliment.for_intensity(:gentle)
 
-    @preamble   = Preamble.text #"never change,"
-    @butan      = Butan.text #"aw yiss!"
+    @preamble   = "you're so clever,"#Preamble.text #"never change,"
+    @butan      = "compliment me again"# Butan.text #"aw yiss!"
 
     @counter    = Counter.delivered_compliments
   end

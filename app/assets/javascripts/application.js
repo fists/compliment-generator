@@ -14,3 +14,6 @@
 //= require jquery_ujs
 
 //= require hitme
+//= require kindness_dial
+
+var kindness = 2;
