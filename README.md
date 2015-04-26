@@ -6,6 +6,11 @@ This is my first Ruby app, and I have little to no idea what I'm doing. Suggesti
 
 ## New Features
 
+26 Apr 2015
+* begin building The Kindess Dial and necessary variable-kindness compliment generation functionality
+* UX hack: float button above footer for small phones
+* published API instructions in "advanced settings" menu
+
 28 Feb 2015
 * Use JavaScript to get compliments, instead of by page reload.
 * dynamic accoutrements
@@ -27,7 +32,10 @@ The mobile-responsive vertical ribbon layout is a new design that I will continu
 
 ## Forthcoming features:
 
+* footer re-design; make layout respond to viewport height in addition to width
+* refactor compliment generation logic: probably cache compliments for performance because it's not the 1980s and storage is cheap
 * CSS cleanup
+* compliment sharing options? (maybe. if there's desire for it.)
 
 ## Wat
 
