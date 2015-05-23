@@ -449,14 +449,6 @@ body {
     box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.15)
   }
 
-  #butan {
-    position: fixed;
-    bottom: 45px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.7), 0 -4px 4px 0px rgba(255,255,255, 0.7);
-  }
-
   footer {
     //display: none !important;
     //position: absolute !important;
@@ -552,6 +544,79 @@ body {
     }
    }
   }
+}
+
+@media (max-height: 600px) {
+
+  #main { z-index: -1 !important; }
+
+  footer { // hack to render compliment button inside footer
+    z-index: 0 !important;
+    pointer-events: none;
+    background: none !important;
+
+    .timestamp, #signature {
+      pointer-events: all !important;
+    }
+
+    .credits {
+      z-index: 3 !important;
+    }
+
+    &::before {
+      content: "another compliment";
+      padding: .5rem;
+      bottom: 12px;
+      background: pink;
+      box-shadow: 0 5px 1px palevioletred;
+      color: palevioletred;
+      position: fixed;
+      left: 50%;
+      font-size: 1.2rem;
+      font-family: 'Shadows Into Light';
+      -webkit-transform: translateX(-50%);
+      pointer-events: none;
+      border-radius: 25%;
+    }
+
+    &::after{
+      color: white;
+      content: "lolhax";
+      height: 50px;
+      width: 100%;
+      background: white;
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  /*#butan {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    //box-shadow: 0px 10px 8px -8px rgba(0, 0, 0, 0.7), 0 -4px 4px 0px rgba(255,255,255, 0.7);
+    font-size: 1.2rem;
+    max-width: 40% !important;
+    padding: .5rem 0.75rem .5rem 0;
+  }*/
+  #butan {
+    position: fixed;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    font-size: 1.2rem;
+    width: 50% !important;
+    height: 30px;
+    padding: .5rem 0.75rem .5rem 0;
+  }
+}
+
+#the_kindness_dial {
+  width: 320px;
+  margin: auto;
 }
 
 @-webkit-keyframes silverwink {

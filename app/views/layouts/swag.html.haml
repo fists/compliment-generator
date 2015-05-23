@@ -27,20 +27,21 @@
         %a.key{href:"#"}
           pro-tools
         .credits.left
-          #kindness_levels
-            %label
-              Intense
-              %input{type:"radio", name:"intensity", value:"intense", onclick:"dialIntense (this)"}
-            %label
-              Gentle
-              %input{type:"radio", name:"intensity", value:"gentle", checked:"true", onclick:"dialGentle (this)"}
-            %label
-              Busted
-              %input{type:"radio", name:"intensity", value:"busted", onclick:"dialBusted (this)"}
-          #dial
-            #dial-content
-            -#today is
-            -##{Time.now.in_time_zone('Eastern Time (US & Canada)').strftime("%A").downcase}
+          #the_kindness_dial
+            #kindness_levels
+              %label
+                Intense
+                %input{type:"radio", name:"intensity", value:"intense", onclick:"dialIntense (this)"}
+              %label
+                Gentle
+                %input{type:"radio", name:"intensity", value:"gentle", checked:"true", onclick:"dialGentle (this)"}
+              %label
+                Busted
+                %input{type:"radio", name:"intensity", value:"busted", onclick:"dialBusted (this)"}
+            #dial
+              #dial-content
+              -#today is
+              -##{Time.now.in_time_zone('Eastern Time (US & Canada)').strftime("%A").downcase}
 
           #api_instructions
             %p
