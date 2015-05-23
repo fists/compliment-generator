@@ -20,7 +20,7 @@ function updateAccoutrements (data) {
   $('#preamble').text(data.preamble);
   $('#butan').text(data.butan);
   $('#butan').css('width', butanWidth + "rem");
-  $('#api_instructions').text(data.counter + " compliments and idgaf");
+  $('#counter').text(data.counter + " compliments and idgaf");
 }
 
 function bindComplimentFetching () {
