@@ -13,17 +13,17 @@
 function dialIntense (radio) {
   //alert ("Aw yiss, making it " + radio.value + "!");
   $('#dial').css('-webkit-transform', "rotate(21deg)");
-  kindness = 3;
+  kindness = "intense";
 }
 
 function dialGentle (radio) {
   //alert ("Aw yiss, making it " + radio.value + "!");
   $('#dial').css('-webkit-transform', "rotate(0deg)");
-  kindness = 2;
+  kindness = "gentle";
 }
 
 function dialBusted (radio) {
   //alert ("Aw yiss, making it " + radio.value + "!");
   $('#dial').css('-webkit-transform', "rotate(-21deg)");
-  kindness = 1;
+  kindness = "busted";
 }

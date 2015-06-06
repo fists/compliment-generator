@@ -16,4 +16,4 @@
 //= require hitme
 //= require kindness_dial
 
-var kindness = 2;
+var kindness = "gentle";

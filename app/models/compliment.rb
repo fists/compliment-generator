@@ -11,7 +11,7 @@ class Compliment
     end
   end
 
-  def self.for_intensity(intensity)
+  def self.for_intensity(intensity)    
     compliment = new
 
     # maybe have something to sanitize the intensity here?

@@ -1,5 +1,5 @@
 function fetchNewCompliment () {
-  $.get("/compliments/random.json").
+  $.get("/compliments/random.json?kindness=" + kindness).
     success(function (data) {
       displayCompliment(data.compliment);
       updateAccoutrements(data);
