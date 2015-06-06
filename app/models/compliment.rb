@@ -40,10 +40,6 @@ class Compliment
     words.all?(&:is_positive?)
   end
 
-  def else?
-    # what to do 
-  end
-
   def length
     words.reduce(5) { |total, word| total += word.word.length }
   end
