@@ -6,6 +6,13 @@ This is my first Ruby app, and I have little to no idea what I'm doing. Suggesti
 
 ## New Features
 
+6 June 2015
+* The Kindness Dial now affects the returned compliment, by sending the parameter "kindness"
+
+23 May 2015
+* Better styling of The Kindness Dial
+* undid button float CSS hack in favor of a forthcoming better refactor of the DOM layout
+
 26 Apr 2015
 * begin building The Kindess Dial and necessary variable-kindness compliment generation functionality
 * UX hack: float button above footer for small phones
