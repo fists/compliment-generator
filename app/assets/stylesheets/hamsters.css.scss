@@ -246,6 +246,8 @@ body {
       a {
         text-decoration: none;
         color: silver;
+        position: relative;
+        left: -2rem;
       }
 
       #kindness_levels {
@@ -307,7 +309,7 @@ body {
 
       #api_instructions {
         float: left;
-        margin-top: 2rem;
+        margin-top: 1rem;
         color: black;
         font-family: "Open Sans";
       }
@@ -321,18 +323,17 @@ body {
       //&::before{
       //  content:"gen@ ";
       //}
+      }
+    a.key {
+      padding:1.8rem 2rem 2rem 2rem;
+      text-decoration: none;
+      font-family: 'Pacifico';
+      font-size: 13px;
+      color: silver;
 
-      a.key {
-        padding:1.8rem 2rem 2rem 2rem;
-        text-decoration: none;
-        font-family: 'Pacifico';
-        font-size: 13px;
-        color: silver;
-
-        &:hover,&:active{
-          background: silver;
-          color: white;
-        }
+      &:hover,&:active{
+        background: silver;
+        color: white !important;
       }
     }
 
@@ -455,6 +456,7 @@ body {
     //bottom: 0;
     //position: relative !important;
     //top: 52%;
+    box-shadow: 0px -20px 20px rgba(0,0,0,.125);
     width: 97%;
   background: white !important;
   position: absolute;
@@ -462,7 +464,7 @@ body {
   bottom: 0;
   left: 0;
   padding: 1rem !important;
-   .timestamp{
+   .timestamp,#signature{
     .key{
       margin:0 1rem;
     }
@@ -507,6 +509,11 @@ body {
 //        top: 2.4rem;
 //        left: -44vw;
       //}
+
+      &.left{
+        right: 0%;
+        left: -5%;
+      }
 
       &::before{
         -webkit-animation: silverwink 2s infinite;
@@ -614,13 +621,35 @@ body {
 @media (max-width: 450px) {
   #butan {
     transform: translateX(-55%) scale(.70, .70);
-    bottom: -.25rem;
+    bottom: -.05rem;
+  }
+  footer::before{
+    background-image: radial-gradient(circle at 50% 20%, white, white 57%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
+    background-repeat: repeat-x;
+    background-size: 30px 30px, 30px 30px;
+    bottom: 48px;
+    height: 26px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    content: ".";
+    color: white;
+    transform: scale(1,-1);
   }
 }
 
 #the_kindness_dial {
   width: 320px;
   margin: auto;
+}
+
+p#counter {
+  color: silver;
+  font-size: 10px;
+  position: relative;
+  top: -10px;
+  &::before { content: "👍"; }
+  &::after  { content: "👋"; }
 }
 
 @-webkit-keyframes silverwink {
