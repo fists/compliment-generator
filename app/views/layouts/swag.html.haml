@@ -6,7 +6,7 @@
     %title The Gentle Compliment Generator
     %meta{name:"Description",content:"Automated Life Coaching, powered by Rails. Also my first Ruby app."}
     %meta{name:"gen@",content:"#{Time.now}"}
-    %meta{name:"viewport",content:"width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no"}
+    %meta{name:"viewport",content:"width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"}
 
   %body.scaled
 
@@ -15,14 +15,16 @@
         .the The
         Gentle Compliment Generator
 
+    -# Compliment lives here
     #main
       = yield
 
-      -#%a.butan.blue{href:"#"}
-      -#%a.button.pink.skew{href:"#", style:"width:12rem;"}
-        tell me i'm pretty
-
     %footer
+
+      -# The Button    
+      %a#butan.button.pink.skew{href:"#", style:"width:#{(@butan.length*0.7)}rem;"}
+        = @butan
+
       #signature
         %a.key{href:"#"}
           pro-tools

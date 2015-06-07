@@ -604,6 +604,20 @@ body {
   }
 }*/
 
+#butan{
+  position: fixed;
+  bottom: .75rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 450px) {
+  #butan {
+    transform: translateX(-55%) scale(.70, .70);
+    bottom: -.25rem;
+  }
+}
+
 #the_kindness_dial {
   width: 320px;
   margin: auto;
