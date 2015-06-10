@@ -620,17 +620,19 @@ body {
 
 @media (max-width: 450px) {
   #butan {
-    transform: translateX(-55%) scale(.70, .70);
+    transform: translateX(-50%) scale(0.7, 0.7);
     bottom: -.05rem;
+    position: absolute;
+    left: 42%;
   }
   footer::before{
     background-image: radial-gradient(circle at 50% 20%, white, white 57%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0));
     background-repeat: repeat-x;
     background-size: 30px 30px, 30px 30px;
-    bottom: 48px;
-    height: 26px;
+    bottom: 50px;
+    height: 25px;
     left: 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
     content: ".";
     color: white;
